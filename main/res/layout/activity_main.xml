@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#c2e2e2">
+
+    <EditText
+        android:id="@+id/from_text"
+
+        android:hint="여기에 변환할 내용을 입력하세요."
+
+        android:layout_width="337dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+
+        android:background="@drawable/border"
+
+        android:gravity="top"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from_spinner" />
+
+    <TextView
+        android:id="@+id/to_text"
+
+        android:layout_width="337dp"
+        android:layout_height="203dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="30dp"
+
+        android:layout_marginEnd="10dp"
+
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border"
+        android:gravity="top"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from_text" />
+
+    <Spinner
+        android:id="@+id/from_spinner"
+
+        style="?android:attr/spinnerItemStyle"
+
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/to_spinner"
+
+        android:layout_width="120dp"
+
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+
+        android:onClick="swap"
+
+        android:layout_width="56dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:text="⇄"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/from_text"
+        app:layout_constraintEnd_toStartOf="@+id/to_spinner"
+        app:layout_constraintStart_toEndOf="@+id/from_spinner"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272" />
+
+
+</android.support.constraint.ConstraintLayout>

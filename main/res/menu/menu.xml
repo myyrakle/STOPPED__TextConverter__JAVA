@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_utf8"
+        android:title="UTF-8"/>
+
+    <item
+        android:id="@+id/action_utf16"
+        android:title="UTF-16"/>
+
+    <item
+        android:id="@+id/action_utf32"
+        android:title="UTF-32"/>
+
+    <item
+        android:id="@+id/action_euckr"
+        android:title="EUC-KR"/>
+
+</menu>
